@@ -75,13 +75,19 @@
       margin: 14px 0 18px;
     }
 
-    .dot{
-      width:9px;
-      height:9px;
-      border-radius:50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 4px rgba(125,211,252,.12);
-    }
+    .construction-indicator{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    45deg,
+    #facc15,
+    #facc15 4px,
+    #111827 4px,
+    #111827 8px
+  );
+  box-shadow: 0 0 0 4px rgba(250,204,21,.15);
+}
 
     .links{
       display:flex;
@@ -143,8 +149,8 @@
       <h1>Keresztes Zsolt</h1>
 
       <div class="pill" aria-label="Státusz">
-        <span class="dot"></span>
-        <span>A domain jelenleg előkészítés alatt áll.</span>
+        <span class="construction-indicator"></span>
+        <span>Az oldal jelenleg készül.</span>
       </div>
 
       <p class="accent">
